@@ -102,3 +102,41 @@ a {
 footer p {
 	font-size: 18px;
 }
+
+@media screen and (min-width: 768px) {
+	section:nth-child(n + 3) {
+		margin-top: 4rem;
+	}
+
+	.projects {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+
+	.project {
+		border: 1px solid black;
+	}
+
+	.tools {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		place-items: center;
+		gap: 20px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#about p {
+		font-size: 18px;
+		line-height: 2;
+	}
+
+	.projects {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.tools {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
