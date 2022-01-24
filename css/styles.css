@@ -102,11 +102,3 @@ a {
 footer p {
 	font-size: 18px;
 }
-
-.top {
-	position: fixed;
-	height: 50px;
-	width: 50px;
-	right: 0px;
-	background-color: red;
-}
