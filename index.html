@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zelykiro / Dev</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+			integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+			crossorigin="anonymous"
+			defer
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+			integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+			crossorigin="anonymous defer"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<script src="js/script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-md navbar-light posiion-fixed fixed-top">
+				<div class="container-fluid mx-md-5">
+					<a class="navbar-brand" href="#">Zel</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasNavbar"
+						aria-controls="offcanvasNavbar"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="offcanvas offcanvas-end"
+						tabindex="-1"
+						id="offcanvasNavbar"
+						aria-labelledby="offcanvasNavbarLabel"
+					>
+						<div class="offcanvas-header">
+							<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+							<button
+								type="button"
+								class="btn-close text-reset"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+								<li class="nav-item">
+									<a class="nav-link" href="#about">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#projects">Projects</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#toolbox">Toolbox</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#socials">Socials</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="home" class="d-flex flex-column justify-content-center">
+				<p class="mb-0 ms-3">Hi, I'm</p>
+				<h1 class="mx-auto">zelykiro.</h1>
+				<p class="ms-3">
+					A Front End Web Developer<span class="d-block ms-4"
+						>& A Self Proclaimed Technophile.</span
+					>
+				</p>
+				<button
+					type="button"
+					class="btn btn-outline-info rounded-pill col-6 mx-auto"
+					data-bs-toggle="modal"
+					data-bs-target="#contact-form"
+				>
+					Let's Talk
+				</button>
+				<div
+					class="modal fade"
+					id="contact-form"
+					tabindex="-1"
+					aria-labelledby="exampleModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="mb-3">
+										<label for="email" class="form-label">Email:</label>
+										<input
+											type="email"
+											class="form-control"
+											id="email"
+											placeholder="name@example.com"
+											required
+										/>
+									</div>
+									<div class="mb-3">
+										<label for="name" class="form-label">Name:</label>
+										<input
+											type="text"
+											class="form-control"
+											id="name"
+											required
+										/>
+									</div>
+									<div class="mb-3">
+										<label for="message" class="form-label">Message</label>
+										<textarea
+											class="form-control"
+											id="message"
+											rows="3"
+											required
+										></textarea>
+									</div>
+									<div class="d-flex justify-content-between">
+										<button
+											id="submitbtn"
+											type="button"
+											class="btn btn-outline-primary"
+											data-bs-dismiss="modal"
+										>
+											Submit
+										</button>
+										<button
+											type="button"
+											class="btn btn-outline-secondary"
+											data-bs-dismiss="modal"
+										>
+											Cancel
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="d-flex flex-column mx-auto col-10 mb-4">
+				<h2 class="mx-auto mb-3">About Me</h2>
+				<p>
+					I’m a Programmer based in Oman, with an unhealthy amount of interest
+					in security.
+				</p>
+				<p>
+					I can do everything from creating a stunning website from scratch to
+					fixing my neighbour’s “blue screen of death”.
+				</p>
+				<p>
+					Something I can’t do is sleep on time when faced with a complex math /
+					programming problem. It starts to “bug” me in my sleep.
+				</p>
+			</section>
+			<section id="projects" class="d-flex flex-column mx-auto col-10 mb-4">
+				<h2 class="mx-auto mb-3">Projects</h2>
+				<div class="projects">
+					<div
+						class="project mb-3"
+						data-bs-toggle="modal"
+						data-bs-target="#project-1"
+					>
+						<img
+							class="project-image img-fluid"
+							src="images/project-1.png"
+							alt="employee directory"
+						/>
+						<h3 class="project-title">Employee Directory</h3>
+						<div
+							class="modal fade"
+							id="project-1"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div
+								class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+							>
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">
+											Employee Directory
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<img
+											class="img-fluid"
+											src="images/project-1.png"
+											alt="employee directory"
+										/>
+										<p>
+											A protoype employee directory for a new and upcoming
+											startup with the ability to filter employees by their
+											names.
+										</p>
+										<div class="mx-auto d-flex justify-content-between">
+											<a
+												class="btn btn-outline-primary col-5"
+												href="https://github.com/zelykiro/employee-directory"
+												target="_blank"
+												>View Code</a
+											>
+											<a
+												class="btn btn-outline-primary col-5"
+												href="https://zelykiro.github.io/employee-directory/"
+												target="_blank"
+												>View Website</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="project mb-3"
+						data-bs-toggle="modal"
+						data-bs-target="#project-2"
+					>
+						<img
+							class="project-image img-fluid"
+							src="images/project-2.png"
+							alt="webapp dashboard"
+						/>
+						<h3 class="project-title">Webapp Dashboard</h3>
+						<div
+							class="modal fade"
+							id="project-2"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div
+								class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+							>
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">
+											Webapp Dashboard
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<img
+											class="img-fluid"
+											src="images/project-2.png"
+											alt="webapp dashboard"
+										/>
+										<p>
+											A dashboard for a webapp with user related graphs and
+											other features such as settings, messaging and feeds.
+										</p>
+										<div class="mx-auto d-flex justify-content-between">
+											<a
+												class="btn btn-outline-primary col-5"
+												href="https://github.com/zelykiro/webapp-dashboard"
+												target="_blank"
+												>View Code</a
+											>
+											<a
+												class="btn btn-outline-primary col-5"
+												href="https://zelykiro.github.io/webapp-dashboard/"
+												target="_blank"
+												>View Website</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="project mb-3"
+						data-bs-toggle="modal"
+						data-bs-target="#project-3"
+					>
+						<img
+							class="project-image img-fluid"
+							src="images/project-3.png"
+							alt="phrase guesser"
+						/>
+						<h3 class="project-title">Phrase Guesser</h3>
+						<div
+							class="modal fade"
+							id="project-3"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div
+								class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+							>
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">
+											Phrase Guesser
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<img
+											class="img-fluid"
+											src="images/project-3.png"
+											alt="phrase guesser"
+										/>
+										<p>
+											A web based game where you guess the pre-programmed
+											phrases from popular movies and such.
+										</p>
+										<div class="mx-auto d-flex justify-content-between">
+											<a
+												class="btn btn-outline-primary col-5"
+												href="https://github.com/zelykiro/phrase-guesser"
+												target="_blank"
+												>View Code</a
+											>
+											<a
+												class="btn btn-outline-primary col-5"
+												href="https://zelykiro.github.io/phrase-guesser/"
+												target="_blank"
+												>View Website</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="project mb-3"
+						data-bs-toggle="modal"
+						data-bs-target="#project-4"
+					>
+						<img
+							class="project-image img-fluid"
+							src="images/project-4.png"
+							alt="photo gallery"
+						/>
+						<h3 class="project-title">Photo Gallery</h3>
+						<div
+							class="modal fade"
+							id="project-4"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div
+								class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+							>
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">
+											Photo Gallery
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<img
+											class="img-fluid"
+											src="images/project-4.png"
+											alt="photo gallery"
+										/>
+										<p>
+											A gallery with images placed in a responsive grid with
+											features like filtering based on name or caption and a
+											lightbox display on click.
+										</p>
+										<div class="mx-auto d-flex justify-content-between">
+											<a
+												class="btn btn-outline-primary col-5"
+												href="https://github.com/zelykiro/photo-gallery"
+												target="_blank"
+												>View Code</a
+											>
+											<a
+												class="btn btn-outline-primary col-5"
+												href="https://zelykiro.github.io/photo-gallery/"
+												target="_blank"
+												>View Website</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="project mb-3"
+						data-bs-toggle="modal"
+						data-bs-target="#project-5"
+					>
+						<img
+							class="project-image img-fluid"
+							src="images/project-5.png"
+							alt="style guide"
+						/>
+						<h3 class="project-title">Style Guide</h3>
+						<div
+							class="modal fade"
+							id="project-5"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div
+								class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+							>
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">
+											Style Guide
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<img
+											class="img-fluid"
+											src="images/project-5.png"
+											alt="style guide"
+										/>
+										<p>
+											A style guide for a startup that goes by the name
+											"cirlces" using Sass.
+										</p>
+										<div class="mx-auto d-flex justify-content-between">
+											<a
+												class="btn btn-outline-primary col-5"
+												href="https://github.com/zelykiro/circles-style-guide"
+												target="_blank"
+												>View Code</a
+											>
+											<a
+												class="btn btn-outline-primary col-5"
+												href="https://zelykiro.github.io/circles-style-guide/"
+												target="_blank"
+												>View Website</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="project mb-3"
+						data-bs-toggle="modal"
+						data-bs-target="#project-6"
+					>
+						<img
+							class="project-image img-fluid"
+							src="images/project-6.png"
+							alt="sign up form"
+						/>
+						<h3 class="project-title">Sign Up Form</h3>
+						<div
+							class="modal fade"
+							id="project-6"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div
+								class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+							>
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">
+											Sign Up Form
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<img
+											class="img-fluid"
+											src="images/project-6.png"
+											alt="sign up form"
+										/>
+										<p>
+											A sign up form for a newsletter related to web
+											development.
+										</p>
+										<div class="mx-auto d-flex justify-content-between">
+											<a
+												class="btn btn-outline-primary col-5"
+												href="https://github.com/zelykiro/sign-up-form"
+												target="_blank"
+												>View Code</a
+											>
+											<a
+												class="btn btn-outline-primary col-5"
+												href="https://zelykiro.github.io/sign-up-form/"
+												target="_blank"
+												>View Website</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="toolbox" class="d-flex flex-column mx-auto col-10 mb-4">
+				<h2 class="mx-auto mb-3">Toolbox</h2>
+				<ul class="tools ps-0">
+					<li>
+						<a href="https://www.figma.com/design/" class="btn btn-outline-info"
+							>Figma</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+							class="btn btn-outline-info"
+							>HTML</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+							class="btn btn-outline-info"
+							>CSS</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://getbootstrap.com/docs/5.1/getting-started/introduction/"
+							class="btn btn-outline-info"
+							>Bootstrap</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://sass-lang.com/documentation"
+							class="btn btn-outline-info"
+							>Sass</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Web/javascript"
+							class="btn btn-outline-info"
+							>JavaScript</a
+						>
+					</li>
+					<li>
+						<a href="https://api.jquery.com/" class="btn btn-outline-info"
+							>JQuery</a
+						>
+					</li>
+					<li>
+						<a href="https://git-scm.com/doc" class="btn btn-outline-info"
+							>Git</a
+						>
+					</li>
+				</ul>
+			</section>
+			<section id="socials" class="d-flex flex-column mx-auto col-10 mb-3">
+				<h3 class="mx-auto mb-3">Socials</h3>
+				<div class="links d-flex justify-content-between">
+					<a href="mailto:zelykiro@gmail.com">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							aria-label="Gmail"
+							role="img"
+							viewBox="0 0 512 512"
+						>
+							<rect width="512" height="512" rx="15%" fill="#fff" />
+							<path d="M158 391v-142l-82-63V361q0 30 30 30" fill="#4285f4" />
+							<path
+								d="M 154 248l102 77l102-77v-98l-102 77l-102-77"
+								fill="#ea4335"
+							/>
+							<path d="M354 391v-142l82-63V361q0 30-30 30" fill="#34a853" />
+							<path
+								d="M76 188l82 63v-98l-30-23c-27-21-52 0-52 26"
+								fill="#c5221f"
+							/>
+							<path
+								d="M436 188l-82 63v-98l30-23c27-21 52 0 52 26"
+								fill="#fbbc04"
+							/>
+						</svg>
+					</a>
+					<a href="https://twitter.com/zelykiro_">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+						<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+						<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+						<svg
+							version="1.1"
+							id="Capa_1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							x="0px"
+							y="0px"
+							viewBox="0 0 112.197 112.197"
+							style="enable-background: new 0 0 112.197 112.197"
+							xml:space="preserve"
+						>
+							<g>
+								<circle
+									style="fill: #55acee"
+									cx="56.099"
+									cy="56.098"
+									r="56.098"
+								/>
+								<g>
+									<path
+										style="fill: #f1f2f2"
+										d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+			c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+			c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+			c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+			c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+			c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+			c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+			C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"
+									/>
+								</g>
+							</g>
+						</svg>
+					</a>
+					<a href="https://www.instagram.com/zelykiro/">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+						<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+						<svg
+							version="1.1"
+							id="Layer_1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							x="0px"
+							y="0px"
+							viewBox="0 0 551.034 551.034"
+							style="enable-background: new 0 0 551.034 551.034"
+							xml:space="preserve"
+						>
+							<g id="XMLID_13_">
+								<linearGradient
+									id="XMLID_2_"
+									gradientUnits="userSpaceOnUse"
+									x1="275.517"
+									y1="4.5714"
+									x2="275.517"
+									y2="549.7202"
+									gradientTransform="matrix(1 0 0 -1 0 554)"
+								>
+									<stop offset="0" style="stop-color: #e09b3d" />
+									<stop offset="0.3" style="stop-color: #c74c4d" />
+									<stop offset="0.6" style="stop-color: #c21975" />
+									<stop offset="1" style="stop-color: #7024c4" />
+								</linearGradient>
+								<path
+									id="XMLID_17_"
+									style="fill: url(#XMLID_2_)"
+									d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722
+		c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156
+		C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156
+		c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722
+		c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"
+								/>
+
+								<linearGradient
+									id="XMLID_3_"
+									gradientUnits="userSpaceOnUse"
+									x1="275.517"
+									y1="4.5714"
+									x2="275.517"
+									y2="549.7202"
+									gradientTransform="matrix(1 0 0 -1 0 554)"
+								>
+									<stop offset="0" style="stop-color: #e09b3d" />
+									<stop offset="0.3" style="stop-color: #c74c4d" />
+									<stop offset="0.6" style="stop-color: #c21975" />
+									<stop offset="1" style="stop-color: #7024c4" />
+								</linearGradient>
+								<path
+									id="XMLID_81_"
+									style="fill: url(#XMLID_3_)"
+									d="M275.517,133C196.933,133,133,196.933,133,275.516
+		s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6
+		c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083
+		C362.6,323.611,323.611,362.6,275.517,362.6z"
+								/>
+
+								<linearGradient
+									id="XMLID_4_"
+									gradientUnits="userSpaceOnUse"
+									x1="418.306"
+									y1="4.5714"
+									x2="418.306"
+									y2="549.7202"
+									gradientTransform="matrix(1 0 0 -1 0 554)"
+								>
+									<stop offset="0" style="stop-color: #e09b3d" />
+									<stop offset="0.3" style="stop-color: #c74c4d" />
+									<stop offset="0.6" style="stop-color: #c21975" />
+									<stop offset="1" style="stop-color: #7024c4" />
+								</linearGradient>
+								<circle
+									id="XMLID_83_"
+									style="fill: url(#XMLID_4_)"
+									cx="418.306"
+									cy="134.072"
+									r="34.149"
+								/>
+							</g>
+						</svg>
+					</a>
+					<a href="https://github.com/zelykiro"
+						><?xml version="1.0" encoding="UTF-8"?>
+						<svg
+							width="24px"
+							height="24px"
+							viewBox="0 0 24 24"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+						>
+							<title>github</title>
+							<desc>Created with sketchtool.</desc>
+							<g
+								id="brand"
+								stroke="none"
+								stroke-width="1"
+								fill="none"
+								fill-rule="evenodd"
+							>
+								<g id="github" fill="#000000">
+									<path
+										d="M12,2 C6.475,2 2,6.475 2,12 C2,16.425 4.8625,20.1625 8.8375,21.4875 C9.3375,21.575 9.525,21.275 9.525,21.0125 C9.525,20.775 9.5125,19.9875 9.5125,19.15 C7,19.6125 6.35,18.5375 6.15,17.975 C6.0375,17.6875 5.55,16.8 5.125,16.5625 C4.775,16.375 4.275,15.9125 5.1125,15.9 C5.9,15.8875 6.4625,16.625 6.65,16.925 C7.55,18.4375 8.9875,18.0125 9.5625,17.75 C9.65,17.1 9.9125,16.6625 10.2,16.4125 C7.975,16.1625 5.65,15.3 5.65,11.475 C5.65,10.3875 6.0375,9.4875 6.675,8.7875 C6.575,8.5375 6.225,7.5125 6.775,6.1375 C6.775,6.1375 7.6125,5.875 9.525,7.1625 C10.325,6.9375 11.175,6.825 12.025,6.825 C12.875,6.825 13.725,6.9375 14.525,7.1625 C16.4375,5.8625 17.275,6.1375 17.275,6.1375 C17.825,7.5125 17.475,8.5375 17.375,8.7875 C18.0125,9.4875 18.4,10.375 18.4,11.475 C18.4,15.3125 16.0625,16.1625 13.8375,16.4125 C14.2,16.725 14.5125,17.325 14.5125,18.2625 C14.5125,19.6 14.5,20.675 14.5,21.0125 C14.5,21.275 14.6875,21.5875 15.1875,21.4875 C19.1375,20.1625 22,16.4125 22,12 C22,6.475 17.525,2 12,2 L12,2 Z"
+										id="Shape"
+									></path>
+								</g>
+							</g></svg
+					></a>
+					<a href="mailto:zelykiro@protonmail.com">
+						<svg
+							width="1024px"
+							height="1024px"
+							viewBox="0 0 1024 1024"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle cx="512" cy="512" r="512" style="fill: #8b89cc" />
+							<path
+								d="M512 676.2s-23.4-2.3-41.7-15c-18.3-12.7-140.4-100-140.4-100V734s1 20.1 23.1 20.1h317.9C693 754.1 694 734 694 734V561.1s-122.1 87.3-140.4 100.1c-18.2 12.6-41.6 15-41.6 15zm0-434.2s-150.9-4.9-182.1 162.6v114.1s1.3 12.2 35.6 37c34.3 24.8 123.2 94.6 146.5 94.6 23.2 0 112.1-69.8 146.5-94.7 34.3-24.8 35.6-37.1 35.6-37.1V404.6C662.9 237.1 512 242.1 512 242zm103.4 224.8H408.7v-62.2c21-83.2 103.3-84.4 103.3-84.4s82.4 1.2 103.4 84.4v62.2z"
+								style="fill: #fff"
+							/>
+						</svg>
+					</a>
+				</div>
+				<button
+					type="button"
+					class="btn btn-lg btn-outline-info rounded-pill col-10 mx-auto mt-4"
+					data-bs-toggle="modal"
+					data-bs-target="#contact-form"
+				>
+					Contact Me
+				</button>
+			</section>
+		</main>
+		<footer class="bg-light">
+			<p class="text-center mb-0 pt-2 pb-2">&copy; copyright 2022</p>
+		</footer>
+	</body>
+</html>

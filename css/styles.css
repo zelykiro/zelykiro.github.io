@@ -1,0 +1,112 @@
+html {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	scroll-behavior: smooth;
+}
+
+.navbar {
+	background-color: white;
+}
+
+#home {
+	min-height: 100vh;
+}
+
+#home p:first-child {
+	font-size: 25px;
+}
+
+#home h1 {
+	font-size: 40px;
+}
+
+#home p span {
+	font-size: 15px;
+}
+
+#about p {
+	font-size: 16px;
+	line-height: 2;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.tools {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tools li {
+	margin-bottom: 10px;
+}
+
+.project {
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.project-image {
+	transition: transform 0.3s ease-in;
+}
+
+.project-title {
+	position: absolute;
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	text-align: center;
+	font-size: 18px;
+	background-color: rgb(212, 97, 97);
+	transform: translateX(101%);
+	transition: transform 0.3s ease-in;
+	color: white;
+}
+.project:hover .project-image {
+	transform: translateX(-100%);
+}
+
+.project:hover .project-title {
+	transform: translateX(0);
+}
+
+.modal-body p {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.links svg {
+	height: 30px;
+	width: 30px;
+}
+
+.links a {
+	opacity: 0.5;
+	transition: opacity 0.25s ease-in;
+}
+
+.links a:hover {
+	opacity: 1;
+}
+
+footer p {
+	font-size: 18px;
+}
+
+.top {
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	right: 0px;
+	background-color: red;
+}
